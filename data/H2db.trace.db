@@ -1,0 +1,3 @@
+2022-01-21 13:26:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "GET[*] ALL"; expected "GRANT"; SQL statement:
+GET ALL [42001-200]

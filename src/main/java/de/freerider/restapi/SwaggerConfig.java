@@ -62,7 +62,7 @@ public class SwaggerConfig {
 			.apis( RequestHandlerSelectors.basePackage( "de.freerider.restapi" ) )
 //			.paths( PathSelectors.any() )
 //			.paths( PathSelectors.regex( "/api/v1/customers.*" ) )
-			.paths( PathSelectors.regex( customersEP_URL + "|" + serverEP_URL ) )
+			.paths( PathSelectors.regex( customersEP_URL + "|/api/v1/vehicles.*|" + serverEP_URL ) )
 //			.paths( PathSelectors.regex( customersEP_URL + "|" + serverEP_URL + "|/people.*" ) )
 			.build()
 //			.directModelSubstitute( LocalDate.class, java.sql.Date.class )
