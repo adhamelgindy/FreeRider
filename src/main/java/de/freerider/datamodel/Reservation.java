@@ -22,8 +22,9 @@ import org.springframework.data.jpa.repository.Temporal;
 
 public class Reservation {
 
-	@Column(name = "ID")
-	private int id = -1;
+	@Id // PRIMARY KEY attribute
+    @Column(name = "ID")
+    private int id = -1;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "customer_id")

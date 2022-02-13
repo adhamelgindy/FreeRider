@@ -22,6 +22,8 @@ import springfox.documentation.service.Contact;
 @EnableWebMvc
 @PropertySource( "classpath:swagger.properties" )
 @ConfigurationProperties( prefix="app.api" )//, ignoreInvalidFields=true, ignoreUnknownFields=false )
+
+
 public class SwaggerConfig {
 
 	/*
@@ -63,6 +65,7 @@ public class SwaggerConfig {
 //			.paths( PathSelectors.any() )
 //			.paths( PathSelectors.regex( "/api/v1/customers.*" ) )
 			.paths( PathSelectors.regex( customersEP_URL + "|/api/v1/vehicles.*|" + serverEP_URL ) )
+			 .paths( PathSelectors.regex( customersEP_URL + "|/api/v1/reservations.*|" + "|/api/v1/vehicles.*|" + serverEP_URL ) )
 //			.paths( PathSelectors.regex( customersEP_URL + "|" + serverEP_URL + "|/people.*" ) )
 			.build()
 //			.directModelSubstitute( LocalDate.class, java.sql.Date.class )

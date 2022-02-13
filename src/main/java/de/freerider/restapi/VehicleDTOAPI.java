@@ -47,7 +47,8 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 /*
  * Refer to endpoint URL from swagger.properties, replaces: "/api/v1/Vehicle"
  */
-@RequestMapping( "${app.api.endpoints.vehicles}" )
+//@RequestMapping( "${app.api.endpoints.vehicles}" )
+@RequestMapping("/api/v1/vehicles")  // oder app.api.endpoints.vehicles in swagger.properties eintragen
 
 public interface VehicleDTOAPI {
 
